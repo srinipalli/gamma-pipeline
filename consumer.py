@@ -12,7 +12,7 @@ DB_NAME = 'logs'
 APP_COLLECTION = 'app'
 CPU_COLLECTION = 'server'
 
-# Regex for parsing Spring Boot app logs
+# Regex for parsing Spring Boot app log
 app_log_regex = re.compile(
     r'^(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3})\s+'
     r'(?P<level>INFO|ERROR|WARN|DEBUG|TRACE)\s+'
