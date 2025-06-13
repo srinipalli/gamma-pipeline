@@ -1,0 +1,17 @@
+2025-06-06 10:22:15.202  INFO 1 --- [nio-8080-exec-4] com.example.MyApp.controller.HealthController : Health check OK
+2025-06-06 10:20:01.123  INFO 1 --- [           main] com.example.MyApp           : Starting MyAppApplication on server-01 with PID 1 (/app.jar started by root in /)
+2025-06-06 10:20:01.456  INFO 1 --- [           main] com.example.MyApp           : No active profile set, falling back to default profiles: default
+2025-06-06 10:20:02.789  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2025-06-06 10:20:03.012  INFO 1 --- [           main] com.example.MyApp           : Started MyAppApplication in 2.345 seconds (JVM running for 3.012)
+2025-06-06 10:21:00.001  INFO 1 --- [nio-8080-exec-1] com.example.MyApp.controller.UserController : GET /api/user 200 OK
+2025-06-06 10:21:05.123 ERROR 1 --- [nio-8080-exec-2] com.example.MyApp.service.UserService     : Failed to fetch user details
+java.lang.NullPointerException: Cannot invoke "String.length()" because "username" is null
+	at com.example.MyApp.service.UserService.getUser(UserService.java:45)
+	at com.example.MyApp.controller.UserController.getUser(UserController.java:28)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+2025-06-06 10:22:10.101  WARN 1 --- [nio-8080-exec-3] com.example.MyApp.service.EmailService   : Email service is slow to respond
+2025-06-06 10:22:15.202  INFO 1 --- [nio-8080-exec-4] com.example.MyApp.controller.HealthController : Health check OK
+2025-06-06 10:22:15.202  INFO 1 --- [nio-8080-exec-4] com.example.MyApp.controller.HealthController : Health check OK
